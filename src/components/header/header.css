@@ -1,0 +1,194 @@
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* fonts */
+@font-face {
+    font-family: SF Pro Text;
+    src: url("../fonts/sfpro/SFProText-Regular.ttf");
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: SF Pro Text;
+    src: url("../fonts/sfpro/SFProText-Medium.ttf");
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: SF Pro Text;
+    src: url("../fonts/sfpro/SFProText-Semibold.ttf");
+    font-weight: 600;
+  }
+  
+  @font-face {
+    font-family: SF Pro Text;
+    src: url("../fonts/sfpro/SFProText-Bold.ttf");
+    font-weight: 900;
+  }
+
+
+
+  .container{
+    max-width:1140px;
+    margin:0 auto;
+    padding:0px 10px;
+  }
+  .top-screen{
+    position: relative;
+    margin-bottom:100px;
+  }
+  .top-screen-line{
+    width:100%;
+    height:1px;
+    background-color: #969696;
+    position: absolute;
+    top:80px;
+  }
+
+  .header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:18px 0px;
+  }
+  
+  .header__nav-list{
+    display:flex;
+    align-items: center;
+    
+  }
+
+  .header__nav-social{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo-link{
+    font-family: SF Pro Text;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.87px;
+    color:#000;
+  }
+
+  .nav-item-link{
+    font-family: SF Pro Text;
+font-size: 18px;
+font-weight: 400;
+color: #000;
+
+  }
+  .header__nav-item{
+    margin-left:60px;
+  }
+  .header__nav-social-item{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background-color: #0066FF;
+    margin-left:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .promo{
+    padding:40px 0px 70px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .promo-text{
+    width:60%;
+  }
+  .promo-title{
+    font-family: 'Audiowide';
+font-size: 80px;
+font-weight: 400;
+text-transform: uppercase;
+  }
+  .promo-title span{
+    color:#0066FF;
+  }
+  .promo-title-text{
+    font-family: SF Pro Text;
+font-size: 80px;
+font-weight: 800;
+text-transform: uppercase;
+margin-bottom:37px;
+-webkit-text-stroke: 2px #000;
+color:transparent;
+line-height: 95.47px;
+  }
+  .promo-describtion{
+    font-family: SF Pro Text;
+font-size: 18px;
+font-weight: 400;
+color:#000;
+margin-bottom:41px;
+max-width:70%;
+  }
+  .promo-btn{
+    font-family: SF Pro Text;
+font-size: 20px;
+font-weight: 500;
+color:#fff;
+background-color: #0066FF;
+padding:15px 30px;
+border-radius:12px;
+border:none;
+cursor:pointer;
+transition: 0.3s;
+  }
+  .promo-btn:hover{
+    background-color: #fff;
+    color:#0066FF;
+    border:1px solid #0066FF;
+  }
+
+
+
+
+  
+/* slider */
+
+.slider-container{
+  margin-bottom:12px;
+}
+  .slider-text{
+    font-family: SF Pro Text;
+font-size: 18px;
+font-weight: 500;
+text-transform: lowercase;
+color:#000;
+border:1px solid #000;
+padding:17px 30px;
+border-radius:100px;
+width:90%;
+  }
+  .slider-text-2{
+    font-family: SF Pro Text;
+font-size: 18px;
+font-weight: 500;
+text-transform: lowercase;
+color:#0066FF;
+border:1px solid #0066FF;
+padding:17px 30px;
+border-radius:100px;
+width:90%;
+  }
+
+ 
+  

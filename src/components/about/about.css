@@ -1,0 +1,77 @@
+.about{
+    padding:100px 0px;
+}
+.about__wrapper{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:200px;
+}
+.about-title{
+    text-align: center;
+    font-family: SF Pro Text;
+font-size: 60px;
+font-weight: 700;
+color:#000;
+margin-bottom:40px;
+}
+.about-title span{
+    font-family:'Audiowide';
+font-size: 60px;
+font-weight: 400;
+color:#0066FF;
+}
+.about-item{
+    background-color: #F5F5F5;
+    border-radius:20px;
+    padding:30px;
+    width:30%;
+}
+.about-item-title{
+    font-family: SF Pro Text;
+font-size: 30px;
+font-weight: 600;
+color:#0066FF;
+margin-bottom:24px;
+}
+.about-subtitle{
+    font-family: SF Pro Text;
+font-size: 18px;
+font-weight: 600;
+text-transform: uppercase;
+color:#000;
+margin-bottom:10px;
+}
+.about-text{
+    font-family: SF Pro Text;
+font-size: 18px;
+font-weight: 400;
+color:#000;
+margin-bottom:10px;
+}
+.about-date{
+    font-family: SF Pro Text;
+font-size: 18px;
+font-weight: 400;
+color:#969696;
+}
+.programms__wrapper{
+    margin-top:70px;
+}
+.wrapper-block-1{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap:96px;
+    margin-bottom:60px;
+}
+.wrapper-block-2{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:66px;
+}
+.wrapper-block-3{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
