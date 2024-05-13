@@ -43,16 +43,30 @@ export default function About(){
                         <div className="wrapper-block-2">
                             <div></div>
                             <img src={img_6} alt="" />
-                            <img src={img_8} alt="" />
-                            <img src={img_9} alt="" />
+                            <img src={img_8} alt=""  className="img-block-2-2"/>
+                            <img src={img_9} alt=""  className="img-block-2"/>
                             <img src={img_10} alt="" />
-                            <img src={img_11} alt="" />
-                            <div></div>
-                            
+                            <img src={img_11} alt="" className="img-block-2"/>
+                          <div></div>
                         </div>
                         <div className="wrapper-block-3">
                             <img src={img_12} alt="" />
                             <img src={img_13} alt="" />
+                        </div>
+                        <div className="wrapper-block-4">
+                        <img src={img_9} alt="" />
+                        <img src={img_11} alt="" />
+                        </div>
+                        <div className="wrapper-block-5">
+                             <img src={img_6} alt="" />
+                            <img src={img_8} alt=""  className="img-block-2-2"/>
+                            <img src={img_9} alt=""  className="img-block-2"/>
+                            <img src={img_10} alt="" />
+                            <img src={img_11} alt="" className="img-block-2"/>
+                            <img src={img_12} alt="" />
+                            <img src={img_13} alt="" />
+                            <img src={img_9} alt="" />
+                            
                         </div>
                     </div>
             </div>

@@ -5,9 +5,17 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import telegram_icon from "../image/telegram.svg";
 import promo_img from "../image/promo-img.svg";
 import Slider from "react-slick";
+import { useState } from "react";
+import { IoMdClose } from "react-icons/io";
 
 
 export default function Header(){
+  const [isOpen, setIsOpen] = useState(false);
+    const [isNavlist, setIsnavlist] = useState(false);
+    const toggleMenu = () => {
+        setIsOpen((open) => !open);
+        setIsnavlist((open)=>!open)
+    }
 
     const settings = {
         infinite: true,
@@ -16,7 +24,34 @@ export default function Header(){
         autoplay: true,
         speed: 2000,
         autoplaySpeed: 2000,
-        cssEase: "linear"
+        cssEase: "linear",
+        variableWidth: true,
+        responsive: [
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToShow:2.2,
+              slidesToScroll: 1,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow:1.5,
+              slidesToScroll: 1,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 460,
+            settings: {
+              slidesToShow:1,
+              slidesToScroll: 1,
+              infinite: true,
+            }
+          },
+        ]
       };
     const setting = {
         infinite: true,
@@ -27,6 +62,34 @@ export default function Header(){
         autoplaySpeed: 2000,
         cssEase: "linear",
         rtl:true,
+        variableWidth: true,
+        responsive: [
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToShow:2.2,
+              slidesToScroll: 1,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow:1.5,
+              slidesToScroll: 1,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 460,
+            settings: {
+              slidesToShow:1,
+              slidesToScroll: 1,
+              infinite: true,
+            }
+          },
+
+        ]
       };
 
 
@@ -35,11 +98,20 @@ export default function Header(){
          <section className="top-screen">
             <div className="top-screen-line"></div>
             <div className="container">
-                <header className="header">
+                <header className={`header ${isOpen ? 'isopen' : ''}`}>
                 <div className="header__logo">
                     <a href="#" className="logo-link">altynbekovz</a>
                 </div>
-                <ul className="header__nav-list">
+                <div className="nav-toggle" onClick={toggleMenu}>
+                                {isOpen ? <IoMdClose  size={"50px"} color="#0066ff"/> : (
+                                    <>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </>
+                                )}
+                            </div>
+                   <ul className={`header__nav-list ${isNavlist ? 'nav__list-open' : ''}`}>
                         <li className="header__nav-item"><a href="#" className="nav-item-link">Обо мне</a></li>
                         <li className="header__nav-item"><a href="#" className="nav-item-link">Скиллы</a></li>
                         <li className="header__nav-item"><a href="#" className="nav-item-link">Проекты</a></li>
@@ -70,19 +142,19 @@ export default function Header(){
           <h3 className="slider-text">мобильные приложения</h3>
         </div>
         <div>
-          <h3 className="slider-text">сайты</h3>
+          <h3 className="slider-text web-text">сайты</h3>
         </div>
         <div>
-          <h3 className="slider-text">лендинги</h3>
+          <h3 className="slider-text lending-text">лендинги</h3>
         </div>
         <div>
-          <h3 className="slider-text">верстка</h3>
+          <h3 className="slider-text verstka-text">верстка</h3>
         </div>
         <div>
           <h3 className="slider-text">многостраничные сайты</h3>
         </div>
         <div>
-          <h3 className="slider-text">адаптивные сайты</h3>
+          <h3 className="slider-text adaptive-text">адаптивные сайты</h3>
         </div>
       </Slider>
 </div>
