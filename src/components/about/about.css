@@ -199,6 +199,9 @@ color:#969696;
         .about__wrapper{
             padding:0px 20px;
         }
+        .wrapper-block-1{
+            grid-column-gap:5px;
+        }
        .wrapper-block-2{
         display: none;
        }
