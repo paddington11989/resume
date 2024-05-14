@@ -305,7 +305,12 @@ margin:0 20px;
      .top-screen{
       position: relative;
      }
-     
+
+      .isopen{
+        display:block;
+      width:100%;
+      background-color: #fff;
+      }
      .nav__list-open{
       display:block;
       position: absolute;
@@ -315,6 +320,7 @@ margin:0 20px;
       height:100vh;
       border-top:1px solid #969696;
       padding-top:40px;
+      z-index:50;
      }
      .header__nav-item{
       margin:0 auto;

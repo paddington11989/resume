@@ -102,7 +102,7 @@ export default function Header(){
          <section className="top-screen">
             <div className="top-screen-line"></div>
             <div className="container">
-                <header  data-aos="fade-down" className={`header ${isOpen ? 'isopen' : ''}`}>
+                <header className={`header ${isOpen ? 'isopen' : ''}`}>
                 <div className="header__logo">
                     <a href="#" className="logo-link">altynbekovz</a>
                 </div>
