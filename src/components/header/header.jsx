@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./header.css";
 import { AiFillInstagram } from "react-icons/ai";
 import { IoLogoWhatsapp } from "react-icons/io";
@@ -7,9 +7,13 @@ import promo_img from "../image/promo-img.svg";
 import Slider from "react-slick";
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
-
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
 export default function Header(){
+  useEffect(()=>{
+    Aos.init({duration:1000})
+  },[])
   const [isOpen, setIsOpen] = useState(false);
     const [isNavlist, setIsnavlist] = useState(false);
     const toggleMenu = () => {
@@ -98,7 +102,7 @@ export default function Header(){
          <section className="top-screen">
             <div className="top-screen-line"></div>
             <div className="container">
-                <header className={`header ${isOpen ? 'isopen' : ''}`}>
+                <header  data-aos="fade-down" className={`header ${isOpen ? 'isopen' : ''}`}>
                 <div className="header__logo">
                     <a href="#" className="logo-link">altynbekovz</a>
                 </div>
@@ -123,7 +127,7 @@ export default function Header(){
                     </ul>
                 </header>
               <div className="promo">
-                <div className="promo-text">
+                <div data-aos="fade-right" className="promo-text">
                     <h2 className="promo-title"><span>Front</span>-end</h2>
                     <h2 className="promo-title-text">разработчик</h2>
                     <p className="promo-describtion">Я - Front-End разработчик с годом опыта работы, 
@@ -131,12 +135,12 @@ export default function Header(){
 сайтов и мобильных приложений.</p>
                     <button className="promo-btn">Обсудить проект</button>
                 </div>
-                <div className="promo-img"><img src={promo_img} alt="" /></div>
+                <div data-aos="fade-left" data-aos-delay="300" className="promo-img"><img src={promo_img} alt="" /></div>
               </div>
               
              
 
-<div className="slider-container">
+<div data-aos="fade-up" className="slider-container">
       <Slider {...settings}>
         <div>
           <h3 className="slider-text">мобильные приложения</h3>

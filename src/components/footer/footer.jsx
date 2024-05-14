@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./footer.css";
 import telegram_footer_icon from "../image/telegram-footer.svg";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
 export default function Footer(){
+    useEffect(()=>{
+        Aos.init({duration:1000})
+    },[])
     return(
         <>
          <section className="footer">
@@ -14,10 +19,10 @@ export default function Footer(){
                     </div>
            
                 <div className="footer-social">
-                    <div className="footer-social-item"><a href="#" className="footer-social-item-link">Telegram</a></div>
-                    <div className="footer-social-item"><a href="#" className="footer-social-item-link">WhatsApp</a></div>
-                    <div className="footer-social-item"><a href="#" className="footer-social-item-link">Instagram</a></div>
-                    <div className="footer-social-item"><a href="#" className="footer-social-item-link">TikTok</a></div>
+                    <div data-aos="flip-left" className="footer-social-item"><a href="#" className="footer-social-item-link">Telegram</a></div>
+                    <div data-aos="flip-left" className="footer-social-item"><a href="#" className="footer-social-item-link">WhatsApp</a></div>
+                    <div data-aos="flip-left" className="footer-social-item"><a href="#" className="footer-social-item-link">Instagram</a></div>
+                    <div data-aos="flip-left" className="footer-social-item"><a href="#" className="footer-social-item-link">TikTok</a></div>
                 </div>
             </div>
          </section>
