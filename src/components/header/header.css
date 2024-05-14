@@ -205,7 +205,8 @@ margin:0 20px;
   .nav-toggle{
     display: none;
     position: absolute;
-    left:35%;
+    /* left:35%; */
+    right:5%;
     margin: 0 auto;
     width: 50px;
     height: 40px;
@@ -280,6 +281,8 @@ margin:0 20px;
   }
 
   @media(max-width:870px){
+    
+    
      .promo{
       flex-direction: column-reverse;
      }
@@ -297,6 +300,9 @@ margin:0 20px;
       width:60%;
      }
      .header__nav-list{
+      display:none;
+     }
+     .header__nav-social{
       display:none;
      }
      .nav-toggle{
@@ -340,9 +346,6 @@ margin:0 20px;
   }
   @media(max-width:520px){
     .header__logo{margin-top:10px}
-    .header__nav-social{
-      display:none;
-     }
      .nav-toggle{
       left:80%;
       top:18px;
