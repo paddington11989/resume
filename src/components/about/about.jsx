@@ -70,7 +70,7 @@ export default function About(){
                             <img data-aos="flip-left" data-aos-delay="300" src={img_11} alt="" className="img-block-2"/>
                             <img data-aos="flip-left" data-aos-delay="300" src={img_12} alt="" />
                             <img data-aos="flip-left" data-aos-delay="300" src={img_13} alt="" />
-                            <img data-aos="flip-left" data-aos-delay="300" src={img_9} alt="" />
+                            <img data-aos="flip-left" data-aos-delay="300" src={img_9} alt="" className="img-block-8"/>
                             
                         </div>
                     </div>
