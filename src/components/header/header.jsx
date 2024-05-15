@@ -3,7 +3,6 @@ import "./header.css";
 import { AiFillInstagram } from "react-icons/ai";
 import { IoLogoWhatsapp } from "react-icons/io";
 import telegram_icon from "../image/telegram.svg";
-import promo_img from "../image/promo-img.svg";
 import Slider from "react-slick";
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
@@ -135,7 +134,7 @@ export default function Header(){
 сайтов и мобильных приложений.</p>
                     <button className="promo-btn">Обсудить проект</button>
                 </div>
-                <div data-aos="fade-left" data-aos-delay="300" className="promo-img"><img src={promo_img} alt="" /></div>
+                <div data-aos="fade-left" data-aos-delay="300" className="promo-img"></div>
               </div>
               
              
